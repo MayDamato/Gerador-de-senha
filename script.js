@@ -4,6 +4,7 @@ let buttonElement = document.querySelector("#button");
 
 let sizePassword = document.querySelector("#valor");
 let password = document.querySelector("#password");
+let passwordField = document.querySelector('#password-field');
 
 let containerPassoword = document.querySelector("#container-passoword");
 
@@ -26,14 +27,16 @@ function generatePassword() {
 
     containerPassoword.classList.remove("hide");
     password.innerHTML = pass;
+    passwordField.value = pass;
     novaSenha = pass;
 }
 
 function copyPassword() {
 
-    navigator.clipboard.writeText(novaSenha);
-    alert("Senha copiada com sucesso!")
-
+    navigator.clipboard.writeText(passwordField.value);
+    alert("Senha copiada com sucesso!");
+    passwordField.select();
+    passwordField.setSelectionRange(0, 99999);
 }
 
 
