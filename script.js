@@ -27,13 +27,12 @@ function generatePassword() {
 
     containerPassoword.classList.remove("hide");
     password.innerHTML = pass;
-    passwordField.value = pass;
     novaSenha = pass;
 }
 
 function copyPassword() {
 
-    navigator.clipboard.writeText(passwordField.value);
+    navigator.clipboard.writeText(novaSenha);
     alert("Senha copiada com sucesso!");
     passwordField.select();
     passwordField.setSelectionRange(0, 99999);
