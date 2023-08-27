@@ -4,7 +4,6 @@ let buttonElement = document.querySelector("#button");
 
 let sizePassword = document.querySelector("#valor");
 let password = document.querySelector("#password");
-let passwordField = document.querySelector('#password-field');
 
 let containerPassoword = document.querySelector("#container-passoword");
 
