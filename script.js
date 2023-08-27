@@ -29,13 +29,14 @@ function generatePassword() {
     password.innerHTML = pass;
     passwordField = pass;
     novaSenha = pass;
+
 }
 
 function copyPassword() {
 
     navigator.clipboard.writeText(novaSenha);
     alert("Senha copiada com sucesso!");
-
+    
 }
 
 
