@@ -3,7 +3,7 @@
 
 <p>Esse é projeto feito com HTML(semântico), CSS e Javascript, utilizei a ferramenta dilplay: flex para que assim ele fique basicamente responsivo.
 O Gerador de Senhas tem a função de gerar uma senha com a quantidade de caracteres que desejar (sendo entre mínimo 5 e o máximo 25), após gerar a sua senha você tem a opção de copiar a mesma apenas clicando no
-botão onde se encontra a senha gerada, pois assim ele já copiará automaticamente para área de transferência. A senha pode ser gerada quantas vezes o usuário quiser, porem não serão exibidas senhas iguais.</p>
+botão onde se encontra a senha gerada, pois assim ele já copiará automaticamente para área de transferência. A senha pode ser gerada quantas vezes o usuário quiser e não serão exibidas senhas iguais. Ainda tenho alterações a fazer neste projeto, em relação a aplicação da função de copiar e colar quando o gerador de senha é aberto em um navegador Android.</p>
 <br>
 <h2>Tecnologias utilizadas:</h2>
 <br>
