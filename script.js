@@ -13,29 +13,28 @@ let novaSenha = "";
 sizePassword.innerHTML = sliderElement.value;
 
 slider.oninput = function () {
-    sizePassword.innerHTML = this.value;
+  sizePassword.innerHTML = this.value;
 }
 
 function generatePassword() {
 
-    let pass = "";
-    for (let i = 0, n = charset.length; i < sliderElement.value; ++i) {
-        pass += charset.charAt(Math.floor(Math.random() * n));
-    }
+  let pass = "";
+  for (let i = 0, n = charset.length; i < sliderElement.value; ++i) {
+    pass += charset.charAt(Math.floor(Math.random() * n));
+  }
 
 
-    containerPassoword.classList.remove("hide");
-    password.innerHTML = pass;
-    novaSenha = pass;
+  containerPassoword.classList.remove("hide");
+  password.innerHTML = pass;
+  novaSenha = pass;
 
 }
 
 function copyPassword() {
 
-    navigator.clipboard.writeText(novaSenha);
-    alert("Senha copiada com sucesso!");
-    
+  navigator.clipboard.writeText(novaSenha);
+  alert("Senha copiada com sucesso!");
+  novaSenha.select();
+  novaSenha.setSelectionRange(0, 99999);
+
 }
-
-
-
