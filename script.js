@@ -34,7 +34,6 @@ function copyPassword() {
 
   navigator.clipboard.writeText(novaSenha);
   alert("Senha copiada com sucesso!");
-  novaSenha.select();
-  novaSenha.setSelectionRange(0, 99999);
 
 }
+
