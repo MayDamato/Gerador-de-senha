@@ -26,7 +26,6 @@ function generatePassword() {
 
     containerPassoword.classList.remove("hide");
     password.innerHTML = pass;
-    passwordField = pass;
     novaSenha = pass;
 
 }
